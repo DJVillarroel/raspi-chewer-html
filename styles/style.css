@@ -32,10 +32,6 @@ body{
 	padding-left: 5vw;
 	padding-right: 5vw;
 	color: #e2e2e9;
-	
-}
-
-.logo-text span{
 	animation:jump 2s infinite;
 }
 
