@@ -1,6 +1,10 @@
-*{
+:root{
 	--main--bg-color: #041A25;
 	--main--nav-color: #a4a4ad;
+	--main--bthover-color: #747480;
+}
+
+body{
 	font-family: 'Barlow Condensed', sans-serif;
 	font-style: normal;
 	background-color: var(--main--bg-color);
@@ -28,17 +32,11 @@
 	padding-left: 5vw;
 	padding-right: 5vw;
 	color: #e2e2e9;
-	animation:jump 2s infinite;
+	
 }
 
-.logo-text:nth-child(1) {
-	animation-delay:0s;
-}
-.logo-text:nth-child(2) {
-	animation-delay:.1s;  
-}
-.logo-text:nth-child(3) {
-	animation-delay:.2s;
+.logo-text span{
+	animation:jump 2s infinite;
 }
 
 @keyframes jump{
@@ -58,10 +56,15 @@
 	width: 100vw;
 	background: var(--main--nav-color);
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 }
 
-.navbar a{
+.navbar:hover ~ .indicator {
+  transform: scaleX(1);
+}
+
+
+.navbar-a{
 	width: 14.28vw;
 	text-align: center;
 	color: #e4e4e7;
@@ -77,11 +80,19 @@
 	padding-right: 10px;
 }
 
-.navbar a:hover{
-	background: rgb(116,116,128);
+.navbar-a:hover {
+	background: var(--main--bthover-color);
 	border-bottom-width: 70px solid #706b8e;
-	transition: all 0.4s;
+	transition: all 0.2s;
 }
 
 
+.indicator {
+  position: absolute;
+  height: 3px;
+  background-color: var(--main--bg-color);
+  top: calc(100% - 2px);
+  transition: all 0.3s ease-in-out;
+  transform: scaleX(0);
+}
 
