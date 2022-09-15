@@ -116,15 +116,20 @@ body{
 		text-decoration: none;
 		text-decoration-color: white;
 		text-transform: uppercase;
-		font-size: 15px;
+		font-size: 20px;
 		padding-top: 10px;
 		padding-bottom: 10px;
 		padding-left: 10px;
 		padding-right: 10px;
+		transition: all 0.2s;
 	}
 
 	#toggle:checked ~ .navbar_responsive-menu_items{ 
 		transform: scale(1, 1);
+	}
+
+	#toggle:checked ~ .navbar_responsive-itemlinks{ 
+		transition: all 0.2s;
 	}
 
 	.navbar_responsive-itemlinks:hover{
