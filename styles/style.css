@@ -20,8 +20,13 @@ body{
 
 }
 
+header{
+	position: fixed;
+}
+
 
 .logo{
+	background-color: var(--main--bg-color);
 	display: flex;
 	width: 100vw;
 	justify-content: space-between;
