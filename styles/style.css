@@ -43,7 +43,7 @@ body{
 	color: #e2e2e9;
 	animation:jump 2s infinite;
 }
-
+/* Animación para que salte el título de la página */
 @keyframes jump{
     0% {
       transform:translateY(0px)
@@ -178,6 +178,21 @@ body{
 	.navbar-a:hover {
 		background: var(--main--bthover-color);
 		transition: all 0.2s;
+		animation: blink 1.6s ease-in-out infinite;
+  		-webkit-animation: blink 1.6s ease-in-out infinite;
 	}
+	/*Con esta animación los botones parpadean*/
+	@keyframes blink {
+		50% {
+    		background-color:var(--main--nav-color);
+  		}
+	}
+
+	@-webkit-keyframes blink {
+  		50% {
+			background-color:var(--main--nav-color);
+  		}
+	}
+
 }	
 
