@@ -1,8 +1,9 @@
+
 var w = 2500;
 var h = 800;
 var columns;
 var rows;
-var scl = 70;
+var scl = 80;
 var canvas;
 
 function windowResized(){

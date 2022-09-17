@@ -25,6 +25,12 @@ header{
 	position: fixed;
 }
 
+footer{
+   position: fixed;
+   bottom: 0;
+   width: 100vw;
+   height: 60px; 
+}
 
 .logo{
 	background-color: var(--main--bg-color);
@@ -49,6 +55,25 @@ header{
 	color: #e2e2e9;
 	animation:jump 2s infinite;
 }
+
+.footerbar{
+	-webkit-font-smoothing: antialiased;
+	width: 100vw;
+	background-color: var(--main--bthover-color);
+	height: 100%;
+	padding-top: 20px;
+	text-align: center;
+	color: #e4e4e7;
+}
+
+.footerbar a{
+		text-decoration: none;
+		text-decoration-color: white;
+		text-transform: uppercase;
+		color: gold;
+}
+
+
 /* Animación para que salte el título de la página */
 @keyframes jump{
     0% {
