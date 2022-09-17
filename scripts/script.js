@@ -20,7 +20,7 @@ function draw(){
 	translate(-w/2,-h/2);
 	for (let i = 0; i < columns; i++) {
 		for (let j = 0; j < rows; j++) {
-			stroke(255);
+			stroke(15*j);
 			noFill();
 			rect(i*scl, j*scl, scl, scl);
 		}
