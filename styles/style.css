@@ -7,17 +7,18 @@
 	--main--bthover-color: #747480;
 }
 
-html {
+html, body {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
+  margin: 0px;
+  padding: 0;
+  overflow: hidden;
 }
 
 body{
 	font-family: 'Barlow Condensed', sans-serif;
 	font-style: normal;
 	background-color: var(--main--bg-color);
-	margin: 0px;
-
 }
 
 header{
