@@ -1,17 +1,21 @@
-console.log('Messi');
-
-
 var w = 2500;
 var h = 800;
 var columns;
 var rows;
 var scl = 70;
+var canvas;
+
+function windowResized(){
+	resizeCanvas(windowWidth, windowHeight);
+}
 
 
 function setup(){
 	columns = w / scl;
 	rows = h / scl;
-	createCanvas(windowWidth, windowHeight, WEBGL);
+	canvas = createCanvas(windowWidth, windowHeight, WEBGL);
+	canvas.position(0,0);
+	canvas.style('z-index', '-1');
 }
 
 function draw(){
