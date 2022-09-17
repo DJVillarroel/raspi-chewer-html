@@ -44,6 +44,7 @@ footer{
 }
 
 .logo-text{
+	text-align: center;
 	-webkit-font-smoothing: antialiased;
 	font-weight: 500px;
 	text-transform: uppercase;
