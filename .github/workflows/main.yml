@@ -5,13 +5,10 @@ on:
       
 jobs:    
   update_raspi:    
-    name: 'Update repo in Raspberry Pi'
+    name: 'Update repo on Raspi'
     runs-on: ubuntu-latest
-    steps:  
-      - name: 'Execute tree'
-        run: tree
-         
-      - name: 'Update repo in Raspberry Pi'
+    steps:           
+      - name: 'Send "git pull" to Raspi'
         uses: appleboy/ssh-action@v0.1.8
         with:
           host: ${{ secrets.HOST }}
