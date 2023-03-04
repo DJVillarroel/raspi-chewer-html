@@ -15,7 +15,7 @@ jobs:
         uses: appleboy/ssh-action@v0.1.8
         with:
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.RASPI_USER }}
-          password: ${{ secrets.RASPI_PASS }}
+          username: ${{ secrets.USER }}
+          password: ${{ secrets.PASS }}
           port: ${{ secrets.PORT }}
           script: git -C /var/www/html pull
