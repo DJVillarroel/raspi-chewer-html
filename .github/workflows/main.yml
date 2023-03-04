@@ -15,7 +15,7 @@ jobs:
         uses: appleboy/ssh-action@v0.1.8
         with:
           host: chewer.ddns.net
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          username: ${{ secrets.RASPI_USER }}
+          password: ${{ secrets.RASPI_PASS }}
           port: 22
           script: whoami
