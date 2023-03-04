@@ -1,7 +1,8 @@
-name: Pipeline
-on: push
-branches: master
-
+on: 
+  push:
+    branches:
+      - master
+      
 jobs:    
   update_raspi:    
     name: 'Update repo in Raspberry Pi'
