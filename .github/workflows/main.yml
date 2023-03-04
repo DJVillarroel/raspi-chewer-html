@@ -1,0 +1,17 @@
+name: Pipeline
+on: 
+  push:
+    branches:
+      - main
+
+jobs:    
+  update_raspi:    
+    name: 'Update repo in Raspberry Pi'
+    runs-on: ubuntu-latest
+    steps:  
+      - name: 'Execute tree'
+        run: tree
+        
+      - name: 'Execute SSH'
+        run: ssh
+        
