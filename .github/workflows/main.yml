@@ -14,8 +14,8 @@ jobs:
       - name: 'Update repo in Raspberry Pi'
         uses: appleboy/ssh-action@v0.1.8
         with:
-          host: chewer.ddns.net
+          host: ${{ secrets.HOST }}
           username: ${{ secrets.RASPI_USER }}
           password: ${{ secrets.RASPI_PASS }}
-          port: 22
-          script: whoami
+          port: ${{ secrets.PORT }}
+          script: git -C /var/www/html pull
