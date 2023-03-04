@@ -1,8 +1,6 @@
 name: Pipeline
-on: 
-  push:
-    branches:
-      - master
+on: push
+branches: master
 
 jobs:    
   update_raspi:    
@@ -11,7 +9,12 @@ jobs:
     steps:  
       - name: 'Execute tree'
         run: tree
-        
-      - name: 'Execute SSH'
-        run: ssh
-        
+         
+      - name: 'Update repo in Raspberry Pi'
+        uses: appleboy/ssh-action@v0.1.8
+        with:
+          host: chewer.ddns.net
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: 22
+          script: whoami
