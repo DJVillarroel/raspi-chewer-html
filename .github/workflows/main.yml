@@ -15,4 +15,4 @@ jobs:
           username: ${{ secrets.USER }}
           password: ${{ secrets.PASS }}
           port: ${{ secrets.PORT }}
-          script: git -C /var/www/html pull
+          script: git -C /var/www/raspi-diego pull
